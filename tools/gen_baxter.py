@@ -65,7 +65,7 @@ sub('Lithia lane on AHX</span>', 'Baxter lane on AHX</span>')
 # ---- testimonial: Lee Brown only ----
 resub(r'<div class="eyebrow">From inside Lithia</div>.*?<div class="quotes">.*?</div>\s*</div>\s*</section>',
       '''<div class="eyebrow">From inside Baxter</div>
-    <h2>Hear it from<br>a Baxter store.</h2>
+    <h2>Hear it from<br>Baxter&rsquo;s own.</h2>
     <div class="vids one">
       <div class="vid">
         <div class="frame"><iframe src="https://www.youtube.com/embed/R5LMemFMfP8" title="Lee Brown on Auto Hauler Exchange" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
