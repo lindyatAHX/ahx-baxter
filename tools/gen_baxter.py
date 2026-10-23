@@ -84,8 +84,9 @@ resub(r'<details><summary>Are we set up already, or do we need approval\?</summa
 # ---- CTA + footer ----
 sub("Forty-eight Lithia stores have already done exactly that.", "Thirteen Baxter stores already ship on AHX.")
 resub(r'<div class="contact-item">\s*<span class="contact-k">Dealer support</span>.*?</div>\s*<!-- TEMP:[^>]*-->',
-      '<!-- TODO: add Baxter dealer-support inbox once assigned -->\n      <!-- TEMP: AHX main line -->')
-sub('<span>Dealer support: <a href="mailto:lithiadealer@autohaulerx.com">lithiadealer@autohaulerx.com</a></span>', '')
+      '<div class="contact-item">\n        <span class="contact-k">George Iliev &middot; Enterprise Sales Director</span>\n        <a href="mailto:giliev@autohaulerx.com" data-cta="contact-email">giliev@autohaulerx.com</a>\n      </div>\n      <!-- TEMP: AHX main line -->')
+sub('<span>Dealer support: <a href="mailto:lithiadealer@autohaulerx.com">lithiadealer@autohaulerx.com</a></span>',
+    '<span>George Iliev, Enterprise Sales Director: <a href="mailto:giliev@autohaulerx.com">giliev@autohaulerx.com</a></span>')
 resub(r'<p class="data-note">.*?</p>',
       '<p class="data-note">Figures reflect loads for 13 Baxter Auto Group stores on Auto Hauler Exchange, lifetime to date (November 2025 &ndash; October 2026): 586 loads and 846 vehicles. Costs are all-in (carrier rate plus AHX platform fee) and stated per vehicle. The lane estimator is a modeled estimate, not a quote.</p>')
 
